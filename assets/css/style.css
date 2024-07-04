@@ -23,6 +23,7 @@
   --color-transparent-black: rgba(15, 15, 15, 0.9);
   --color-transparent-gray: rgba(40, 40, 40, 0.9);
   --color-transparent-light: rgba(255, 255, 255, 0.7);
+  --color-transparent-white: rgba(255, 255, 255, 0.18);
   --color-transparent-blue: rgba(127, 137, 161, 0.25);
   --color-transparent: rgba(40, 40, 40, 0.08);
   --color-dark-gray: #282828;
@@ -182,7 +183,9 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid var(--color-transparent-dark);
+  border-bottom: 2px solid var(--color-transparent-dark);
+  backdrop-filter: blur(50%);
+  box-shadow: 0px 0px 30px var(--color-transparent-black);
 }
 
 #header.header-scrolled,
