@@ -832,12 +832,16 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
+                action="https://api.web3forms.com/submit"
+                method="POST"
                 class="php-email-form"
               >
                 <div class="row">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="6959a17c-9119-4a89-b5e9-155a9cdaf636"
+                  />
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
@@ -859,7 +863,7 @@
                     />
                   </div>
                 </div>
-                <div class="form-group mt-3">
+                <!-- <div class="form-group mt-3">
                   <input
                     type="text"
                     class="form-control"
@@ -868,7 +872,7 @@
                     placeholder="Asunto"
                     required
                   />
-                </div>
+                </div> -->
                 <div class="form-group mt-3">
                   <textarea
                     class="form-control"
@@ -887,7 +891,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Enviar</button>
                 </div>
               </form>
             </div>
@@ -953,7 +957,7 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
